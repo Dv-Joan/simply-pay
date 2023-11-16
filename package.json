@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^0.3.5",
+    "@nextui-org/react": "^2.2.9",
     "@planetscale/database": "^1.11.0",
     "@t3-oss/env-nextjs": "^0.7.0",
     "@tanstack/react-query": "^4.32.6",
@@ -20,6 +21,7 @@
     "@trpc/react-query": "^10.37.1",
     "@trpc/server": "^10.37.1",
     "drizzle-orm": "^0.28.5",
+    "framer-motion": "^10.16.5",
     "next": "^14.0.0",
     "next-auth": "^4.24.4",
     "react": "18.2.0",

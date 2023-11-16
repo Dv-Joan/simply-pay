@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CreatePost } from "@/app/_components/create-post";
 import { getServerAuthSession } from "@/server/auth";
 import { api } from "@/trpc/server";
+import { Button } from "@nextui-org/button";
 
 export default async function Home() {
   const hello = await api.post.hello.query({ text: "from tRPC" });
@@ -14,7 +15,7 @@ export default async function Home() {
         <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
           Simply <span className="text-[hsl(280,100%,70%)]">Pay</span>
         </h1>
-
+        <Button color="primary">Primary</Button>
         <div className="flex flex-col items-center gap-2">
           <p className="text-2xl text-white">
             {hello ? hello.greeting : "Loading tRPC query..."}
